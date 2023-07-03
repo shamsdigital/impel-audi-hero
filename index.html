@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+     />
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"/>
+   <body>
+    <div class="frame-parent">
+      <section class="frame-wrapper">
+        <div class="rectangle-parent">
+          <div class="frame-child"></div>
+          <img
+            class="frame-item"
+            alt=""
+            src="c:\Users\Shams\Documents\Impel\women.png"
+            data-animate-on-scroll
+          />
+
+          <h2 class="impels-sales-ai-container">
+            <p class="impels-sales-ai">Impel’s Sales AI Turns Unresponsive</p>
+            <p class="impels-sales-ai">Leads into Found Revenue</p>
+          </h2>
+          <div class="challenge-parent" data-animate-on-scroll>
+            <div class="challenge">CHALLENGE</div>
+            <div class="resource-constrained-sales-tea-container">
+              <p class="impels-sales-ai">Resource-constrained</p>
+              <p class="impels-sales-ai">sales teams aren’t</p>
+              <p class="impels-sales-ai">able to follow up</p>
+              <p class="impels-sales-ai">with dormant and</p>
+              <p class="impels-sales-ai">unresponsive leads</p>
+            </div>
+          </div>
+          <div class="solution-parent" data-animate-on-scroll>
+            <div class="solution">SOLUTION</div>
+            <div class="impels-sales-ai-container1">
+              <p class="impels-sales-ai">Impel’s Sales AI</p>
+              <p class="impels-sales-ai">persistently follows</p>
+              <p class="impels-sales-ai">up with every lead,</p>
+              <p class="impels-sales-ai">unlocking additional</p>
+              <p class="impels-sales-ai">revenue</p>
+            </div>
+          </div>
+          <div class="parent" data-animate-on-scroll>
+            <b class="b">21%</b>
+            <b class="of-leads-reengaged-container">
+              <p class="impels-sales-ai">of leads reengaged</p>
+              <p class="impels-sales-ai">with long term</p>
+              <p class="impels-sales-ai">follow-up</p>
+            </b>
+          </div>
+          <img class="frame-inner" alt="" src="c:\Users\Shams\Documents\Impel\audi.png" />
+        </div>
+      </section>
+      <section class="manual-lead">
+        <div class="lean-staffing-and-manual-follo-parent">
+          <div class="lean-staffing-and-container" data-animate-on-scroll>
+            <p class="impels-sales-ai">
+              Lean Staffing and Manual Follow-Up Create Lost
+            </p>
+            <p class="impels-sales-ai">Opportunities in a Tight Market</p>
+          </div>
+          <div class="concerned-about-an-container" data-animate-on-scroll>
+            <p class="impels-sales-ai">
+              Concerned about an uncertain economic environment and fluctuating
+              demand, the team at Audi Denver needed to control costs while
+              improving productivity, and that meant doing more with an
+              already-lean staff. Attempting to respond to every inquiry, follow
+              up with each lead, send and answer emails, handle routine
+              questions set up appointments, and track every channel (while
+              delivering a great experience for every shopper) was straining
+              team resources - and impeding their ability to prioritize
+              ready-to-buy customers. Increasingly, the team had to make
+              judgment calls about which opportunities to chase and which leads
+              to drop. Staff members were forced to abandon lea ds that had been
+              sitting in the CRM for some time, including shoppers who took
+              longer to respond or had gone dark.
+            </p>
+            <p class="impels-sales-ai"></p>
+            <p class="impels-sales-ai">
+              <br>The result? Lead follow-up dwindled to ju st a few days -yet those
+              are precisely the opportunities that become a key source of
+              business when the market begins to cool.
+            </p>
+          </div>
+        </div>
+        <div class="manual-lead-inner">
+          <div class="rectangle-group">
+            <div class="rectangle-div" data-animate-on-scroll></div>
+            <div class="we-were-already-seeing-early-s-parent">
+              <div class="we-were-already-container" data-animate-on-scroll>
+                <p class="impels-sales-ai">
+                  "We were already seeing early signs of a decline in leads, and
+                  with backlogged
+                </p>
+                <p class="impels-sales-ai">
+                  inventory finally coming in, we needed to make conservative
+                  decisions abdut
+                </p>
+                <p class="impels-sales-ai">
+                  costs - especially overhead and stafing. We're always busy, so
+                  this was stretch-
+                </p>
+                <p class="impels-sales-ai">
+                  ing our sales teams thinner than ever. We needed solutions to
+                  help us be more
+                </p>
+                <p class="impels-sales-ai">
+                  productive and eficient - without adding headcount!'
+                </p>
+              </div>
+              <div class="allen-gooch-general-container" data-animate-on-scroll>
+                <p class="impels-sales-ai">Allen Gooch General Manager</p>
+                <p class="impels-sales-ai">Bob Rohrman KB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

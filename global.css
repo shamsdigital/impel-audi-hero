@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    width: 100%;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-raleway: Raleway;
+  
+    /* font sizes */
+    --font-size-xl: 20px;
+    --font-size-3xl: 22px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+  
+    /* Paddings */
+    --padding-104xl: 123px;
+    --padding-13xl: 32px;
+    --padding-12xl: 31px;
+    --padding-3xl: 22px;
+  
+    /* border radiuses */
+    --br-3xs: 10px;
+  }
+  
